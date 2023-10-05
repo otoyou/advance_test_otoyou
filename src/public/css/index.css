@@ -1,0 +1,159 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 15px;
+}
+
+.form__group-title{
+    width: 300px;
+    display: flex;
+    justify-content: left;
+}
+
+.form__label--item {
+    color: #000;
+}
+
+.form__label--required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: #ff0000;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text {
+    position: relative;
+}
+
+.form__group-label {
+    color: #c7c7c7;
+    /*width: 600px;*/
+    margin:0 auto 30px 0;
+
+    position: absolute;
+    left: 20px;
+}
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    appearance: none;
+}
+
+.form__group-content-name {
+    display: flex;
+    justify-content: space-between;
+}
+.form__input--text-name {
+    position: relative;
+}
+
+.form__input--text-name input{
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    
+    appearance: none;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+/* gender radio button */
+.form__input--radio label {
+    padding: 0 0 0 32px;
+    font-size: 16px;
+    line-height: 28px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.form__input--radio label:before{
+    content:'';
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.form__input--radio input[type="radio"] {
+    display: none;
+}
+
+.form__input--radio input[type="radio"]:checked+label:after {
+    content:'';
+    width: 10px;
+    height: 10px;
+    position:absolute;
+    top: 9px;
+    left: 9px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* postcode */
+.form__input--text--post label {
+    display: inline-block;
+}
+
+.form__input--text--post input {
+    display: inline-block;
+}
+.form__input--textarea textarea {
+    height: 180px;
+    margin-top: 20px;
+}
+
+.form__input--text--post {
+    display: flex;
+}
+
+/* form button */
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
