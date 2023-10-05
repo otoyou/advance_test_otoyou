@@ -16,20 +16,21 @@
       <div class="contact-form__heading">
         <h2>管理システム</h2>
       </div>
-      <form class="form" action="/contacts/search" method="get">
+      <form class="form" action="admini/search" method="get">
         @csrf
+        <div class="form__name--gender">
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">お名前</span>
           </div>
-          <div class="form__group-content-name">
-            <div class="form__input--text-name">
+          <div class="form__group-content">
+            <div class="form__input--text">
               <input type="text" name="fullname"/>
             </div>
           </div>
-          
+        </div>
         <div class="form__group">
-          <div class="form__group-title">
+          <div class="form__group-title-gender">
             <span class="form__label--item">性別</span>
           </div>
           <div class="form__group-content">
@@ -43,19 +44,23 @@
             </div>
           </div>
         </div>
+        </div>
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">登録日</span>
+          </div>
           <div class="form__group-content">
-            <div class="form__input--text">
-              <input type="" name=""/>
-              <input type="" name=""/>
+            <div class="form__input--text-date">
+              <input type="date" id="start" name="day-start"/>
+              <p>〜</p>
+              <input type="date" id="end" name="day-end"/>
             </div>
           </div>
         </div>
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">メールアドレス</span>
+          </div>
           <div class="form__group-content">
             <div class="form__input--text">
               <input type="email" name="email"/>
@@ -65,8 +70,47 @@
         <div class="form__button">
           <button class="form__button-submit" type="submit">検索</button>
         </div>
-          <input type="reset" value="リセット" />
+          <input class="form__button-rest" type="reset" value="リセット" />
       </form>
     </div>
+
+
+
+<div class="search-table">
+  <table class="search-table__inner">
+    <tr class="search-table__row">
+      <th class="search-table__header">ID</th>
+      <th class="search-table__header">お名前</th>
+      <th class="search-table__header">性別</th>
+      <th class="search-table__header">メールアドレス</th>
+      <th class="search-table__header">ご意見</th>
+    </tr>
+{{--
+@foreach ($contact as $contact)
+<tr class="search-table__row">
+  <td class="search-table__item">
+    <form class="update-form">
+      <div class="update-form__item">
+        <p class="update-form__item-input">{{ $contact['content'] }}</p>
+      </div>
+      <div class="update-form__button">
+        <button class="update-form__button-submit" type="submit">更新</button>
+      </div>
+    </form>
+  </td>
+  <td class="search-table__item">
+    <form class="delete-form">
+      <div class="delete-form__button">
+        <button class="delete-form__button-submit" type="submit">削除</button>
+      </div>
+    </form>
+  </td>
+</tr>
+@endforeach
+--}}
+
+      </table>
+    </div>
+
   </main>
 </body>

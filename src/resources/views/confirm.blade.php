@@ -31,12 +31,14 @@
             <tr class="confirm-table__row">
               <th class="confirm-table__header">性別</th>
               <td class="confirm-table__text">
-                <input type="text" name="gender" value="{{ $contact['gender'] }}" readonly />
-    {{--            @if( "{{ $contact['gender'] }}" === 1)
+                <input type="text" name="gender" value="{{ $contact['gender'] }}" readonly /><label>（１:男性　　２：女性）</label>
+{{-- エラーになるのでコメントアウト
+                @if( "{{ $contact['gender'] }}"" == 1)
                   <p>男性</p>
                 @else
                   <p>女性</p>
-                @endif--}}
+                @endif --}}
+
               </td>
             </tr>
             <tr class="confirm-table__row">

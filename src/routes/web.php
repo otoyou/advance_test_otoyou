@@ -20,3 +20,8 @@ Route::post('/contacts/confirm',[ContactController::class,'confirm']);
 
 Route::post('/contacts',[ContactController::class,'store']);
 
+Route::get('/admini',[ContactController::class,'admini']);
+
+Route::get('/admin/search',[ContactController::class,'search']);
+
+

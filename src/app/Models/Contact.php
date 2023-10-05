@@ -17,4 +17,32 @@ class Contact extends Model
         'building_name',
         'opinion'
     ];
+
+    public function scopeNameSearch($query, $fullname)
+    {
+      if (!empty($fullname)) {
+        $query->where('fullname', $fullname);
+      }
+    }
+
+    public function scopeGenderSearch($query, $gender)
+    {
+      if (!empty($gender)) {
+        $query->where('gender', $gender);
+      }
+    }
+
+    public function scopeDateSearch($query, $created_at)
+    {
+      if (!empty($created_at)) {
+        $query->where('created_at', $created_at);
+      }
+    }
+
+    public function scopeEmailSearch($query, $email)
+    {
+      if (!empty($email)) {
+        $query->where('email', $email);
+      }
+    }
 }

@@ -1,0 +1,182 @@
+.contact-form__content {
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 1230px;
+}
+
+.contact-form__heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 25px;
+}
+
+.form__name--gender {
+  display: flex;
+  justify-content: left;
+}
+
+.form__group {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 15px;
+}
+
+.form__group-title {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__group-title-gender {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.form__label--item {
+  color: #000;
+  display: block;
+}
+
+.form__input--text-date {
+  display: flex;
+}
+
+.form__input--text-date p{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__input--text-date input,
+.form__input--text input {
+  padding: 10px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 10px;
+
+  appearance: none;
+}
+
+/* gender radio button */
+.form__input--radio label {
+  padding: 0 0 0 32px;
+  font-size: 16px;
+  line-height: 28px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.form__input--radio label:before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+.form__input--radio input[type="radio"] {
+  display: none;
+}
+
+.form__input--radio input[type="radio"]:checked+label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* form button */
+.form__button {
+  margin-top: 30px;
+}
+
+.form__button-submit {
+  padding: 10px;
+  width: 20%;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* reset-button */
+.form__button-rest {
+  color: #000;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  text-decoration: underline;
+}
+
+/* table */
+.search-table {
+  margin: 30px auto;
+  width: 70%;
+  text-align: left;
+}
+
+.search-table__inner {
+  width: 100%;
+}
+
+.todo-table__row {
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-table__header {
+  padding: 12px;
+  width: 20%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.todo-table__item:first-of-type {
+  padding: 12px;
+  width: 90%;
+}
+
+/* delete-button */
+.delete-form__button {
+  width: 50px;
+}
+
+.delete-form__button-submit {
+  padding: 5px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background: #ff0000;
+  color: #fff;
+  cursor: pointer;
+}

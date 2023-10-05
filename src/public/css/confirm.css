@@ -83,7 +83,6 @@
     color: #000;
     text-decoration: none;
     font-family: sans-serif;
-        /* 書体もリセットしています。不要であれば削除を */
     font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
