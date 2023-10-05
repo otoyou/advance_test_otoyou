@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-//use App\Http\Requests\ContactRequest;
 use App\Models\Contact;
+use Illuminate\Http\Request;
+use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
@@ -13,14 +13,14 @@ class ContactController extends Controller
         return view('index');
     }
 
-    public function confirm(Request $request)
+    public function confirm(Request $request)//バリデーションエラーになるのでRequestにしておく
     {
         $contact = $request->only(['gender','email','postcode','address','building_name','opinion']);
         $contact['fullname'] = $request['family_name'].'　'.$request['first_name'];
         return view('confirm', compact('contact'));
     }
 
-    public function store(Request $request)
+    public function store(Request $request)//バリデーションエラーになるのでRequestにしておく
     {
         $contact = $request->only(['fullname','gender','email','postcode','address','building_name','opinion']);
         Contact::create($contact);

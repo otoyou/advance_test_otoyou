@@ -29,7 +29,9 @@
               <p class="form__group-label">例）山田</p>
             </div>
             <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+               @error('family_name')
+                 {{ $message }}
+               @enderror
             </div>
           </div>
           <div class="form__group-content-name">
@@ -38,7 +40,9 @@
               <p class="form__group-label">例）太郎</p>
             </div>
             <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+               @error('first_name')
+                 {{ $message }}
+               @enderror
             </div>
           </div>
         </div>
@@ -55,7 +59,9 @@
               <label for="button-2">女性</label>
             </div>
             <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+               @error('gender')
+                 {{ $message }}
+               @enderror
             </div>
           </div>
         </div>
@@ -70,7 +76,9 @@
               <p class="form__group-label">例）test@example.com</p>
             </div>
             <div class="form__error">
-              <!--バリデーション機能を実装したら記述します。-->
+              @error('email')
+                 {{ $message }}
+               @enderror
             </div>
           </div>
         </div>
@@ -88,7 +96,9 @@
               <p class="form__group-label">例）123-4567</p>
             </div>
             <div class="form__error">
-              <!--バリデーション機能を実装したら記述します。-->
+              @error('postcode')
+                 {{ $message }}
+               @enderror
             </div>
           </div>
         </div>
@@ -103,7 +113,9 @@
               <p class="form__group-label">例）東京都渋谷区千駄ヶ谷1-2-3</p>
             </div>
             <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+               @error('address')
+                 {{ $message }}
+               @enderror
             </div>
           </div>
         </div>

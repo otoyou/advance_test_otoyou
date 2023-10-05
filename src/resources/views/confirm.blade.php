@@ -11,9 +11,6 @@
 </head>
 <body>
   <main>
-
-  <?php print_r($contact) ?>
-
     <div class="confirm__content">
       <div class="confirm__heading">
         <h2>内容確認</h2>
