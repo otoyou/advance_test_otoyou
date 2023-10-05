@@ -72,6 +72,8 @@
         </div>
         <div class="form__button">
           <button class="form__button-submit" type="submit" name="submit" value="complete">送信</button>
+        </div>
+        <div class="form__button--back">
           <button class="form__button-back" type="submit" name="back" value="back">修正する</button>
         </div>
       </form>
